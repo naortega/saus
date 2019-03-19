@@ -1,0 +1,27 @@
+============
+*** SAUS ***
+============
+Scripted AUdio Software is a command-line tool for real-time audio
+scripted filtering via JACK audio inputs. The user writes scripts which
+modify the frequency and amplitude of the sound waves coming from the
+JACK input.
+
+# Building
+----------
+## Dependencies
+To build the project you will require the following dependencies:
+  * GNU Make
+  * C99 compatible compiler
+  * JACK2
+
+## Compiling
+To compile the project simply run the `make' command in the root
+directory of the project. By default this will create a release build
+with compiler optimizations. To compile with debug flags append
+`DEBUG=1' to the `make' command.
+
+# License
+---------
+This project is licensed under the terms & conditions of the GNU Affero
+General Public License version 3 or greater (see `LICENSE' file for more
+information).

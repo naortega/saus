@@ -1,0 +1,6 @@
+# Ignore build files
+*.o
+saus
+
+# Ignore vim temporary files
+*.sw[a-z]
