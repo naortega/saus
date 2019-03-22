@@ -20,6 +20,7 @@
 
 #include <stdio.h>
 #include <readline/readline.h>
+#include <jack/jack.h>
 
 int main(int argc, char *argv[]) {
 	struct arguments arguments;
