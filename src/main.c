@@ -16,8 +16,17 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+#include "args.h"
+
 #include <stdio.h>
+#include <readline/readline.h>
 
 int main(int argc, char *argv[]) {
+	struct arguments arguments;
+	arguments.verbose = 0;
+	arguments.script_file = NULL;
+	arguments.playlist_file = NULL;
+
+	argp_parse(&argp, argc, argv, 0, 0, &arguments);
 	return 0;
 }
