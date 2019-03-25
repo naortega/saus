@@ -19,8 +19,8 @@ DEBUG=0
 INCFLAGS=`pkg-config jack --cflags`
 LDFLAGS=`pkg-config jack --libs` -lreadline
 CFLAGS=$(INCFLAGS) -std=c99 -Wall -Wextra -Wfatal-errors -Werror
-HDRS=src/args.h
-OBJS=src/main.o
+HDRS=src/args.h src/processing.h
+OBJS=src/main.o src/processing.o
 
 ifeq ($(DEBUG),1)
 	CFLAGS+=-g -O0 -DDEBUG
