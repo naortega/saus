@@ -26,8 +26,6 @@ const char *argp_program_bug_address = "<nortega@themusicinnoise.net>";
 static char doc[] = "saus -- a command-line tool for real-time "
 	"scripted audio filtering.";
 
-static char args_doc[] = "[-v] -f FILE | -l FILE";
-
 static struct argp_option options[] = {
 	{ "verbose",   'v', 0,       0, "Make output verbose", 0 },
 	{ "file",      'f', "FILE",  0, "Script file", 0 },
@@ -69,4 +67,4 @@ static error_t parse_opt(int key, char *arg, struct argp_state *state) {
 	return 0;
 }
 
-static struct argp argp = { options, parse_opt, args_doc, doc, 0, 0, 0 };
+static struct argp argp = { options, parse_opt, 0, doc, 0, 0, 0 };
