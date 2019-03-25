@@ -15,6 +15,10 @@ To build the project you will require the following dependencies:
   * JACK2
   * GNU Readline
 
+There exists a `checkdeps.sh' script that can be used to check if you
+have all the dependencies installed, although it is not fully
+functional.
+
 ## Compiling
 To compile the project simply run the `make' command in the root
 directory of the project. By default this will create a release build
